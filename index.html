@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational for you</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Motivational for you</h1>
+
+        <p id="quote" class="quote">Presiona el botón para una frase motivacional.</p>
+
+        <button onclick="newQuote()" class="btn">Otra frase</button>
+
+        <h3>Categorías</h3>
+        <div class="categories">
+            <button class="cat-btn" onclick="showCategory('motivacion')">Motivación</button>
+            <button class="cat-btn" onclick="showCategory('amor')">Amor</button>
+            <button class="cat-btn" onclick="showCategory('tristeza')">Tristeza</button>
+            <button class="cat-btn" onclick="showCategory('autoestima')">Autoestima</button>
+        </div>
+
+        <button onclick="saveFavorite()" class="fav-btn">⭐ Guardar en favoritos</button>
+
+        <h3>Favoritos</h3>
+        <ul id="favorites"></ul>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+</body>
+</html>

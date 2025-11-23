@@ -1,0 +1,57 @@
+body {
+    background: #f0f4ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    color: #3a3a3a;
+}
+
+.quote {
+    font-size: 1.3em;
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+.btn, .cat-btn, .fav-btn {
+    background: #4d6fff;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cat-btn {
+    background: #6d89ff;
+}
+
+.fav-btn {
+    background: #ffcc00;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
